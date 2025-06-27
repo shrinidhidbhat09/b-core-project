@@ -6,6 +6,11 @@ import os
 app = Flask(__name__)
 CORS(app)  # Enable Cross-Origin support for Flutter Web
 
+
+@app.route('/')
+def hello():
+    return 'Hello from Railway!'
+
 # Upload folder configuration
 UPLOAD_FOLDER = "uploads"
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
