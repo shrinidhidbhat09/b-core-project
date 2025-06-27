@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["libGL", "glibc", "ffmpeg", "libx11"]
+nixPkgs = ["libGL", "glibc", "ffmpeg", "xorg.libX11"]
 
 [phases.build]
 cmds = ["pip install -r requirements.txt"]
