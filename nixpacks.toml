@@ -1,0 +1,5 @@
+[[build]]
+include = ["apt.txt", "requirements.txt"]
+
+[start]
+cmd = "flask --host=0.0.0.0 --port=5000 run"
